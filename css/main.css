@@ -5,3 +5,45 @@
     text-decoration: none;
     font-family: cursive;
 }
+body{
+    padding: 50px;
+}
+.wrap{
+    width: 250px;
+    height: 250px;
+    background-color: darkblue;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    animation-name: komiljon;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes komiljon {
+    0%{
+        transform: translateX(0) ;
+    }
+    50%{
+        border-radius: 50%;
+        background-color: red;
+    }
+    100%{
+        transform: translateX(1200px);
+    }
+}
+
+.wrap:hover{
+    /* transform: translate(-100px, -50px) scale(1.2) rotate(360deg) skew(-45deg); */
+}
